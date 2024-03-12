@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta information -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Description of your website" />
+    <meta property="og:title" content="Final Assignment" />
+    <!-- Title -->
+    <title>K-RITE Final Assignment</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn.pixabay.com/photo/2017/11/16/09/13/monogram-2953821_1280.png"
+    />
+
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Wrapper for entire content -->
+
+    <div class="wrapper">
+      <!-- sidebar  -->
+      <div class="sidebar">
+        <!-- logo of sidebar -->
+        <div class="logo">
+          <link
+            rel="stylesheet"
+            href="https://cdn.pixabay.com/photo/2017/11/16/09/13/monogram-2953821_1280.png"
+          />
+
+          <img
+            src="https://cdn.pixabay.com/photo/2017/11/16/09/13/monogram-2953821_1280.png"
+            alt=""
+          />
+
+          <h2>InnovateHub</h2>
+        </div>
+        <!-- menu items -->
+        <ul class="menu">
+          <li>
+            <a href="#"
+              ><i class="fa fa-pencil-square"></i> Design Team
+              <span class="notification">+1</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-bullhorn"></i> Marketing Team
+              <span class="notification">+2</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-code"></i> Development Team<span
+                class="notification"
+                >+3</span
+              ></a
+            >
+          </li>
+          <hr />
+          <!-- folder section -->
+          <li class="create-folder">
+            <a href="#" style="color: grey"
+              ><i class="fa fa-stop-circle"></i> Create Team &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp;
+            </a>
+          </li>
+          <hr />
+          <li class="folder">
+            FOLDERS <span> +</span>
+            <a href="#"
+              ><i class="fas fa-folder"></i> Products
+              <span class="folder-icon"><i class="fa fa-caret-down"></i></span
+            ></a>
+            <ul class="sub-menu">
+              <li><a href="#">Roadmap</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Performance</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Analytics</a></li>
+              <li>
+                <a href="#" style="color: grey"
+                  ><i class="fa fa-stop-circle"></i> Add New Sub Folder</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- multiple folder -->
+          <li>
+            <a href="#"
+              ><i class="fas fa-folder"></i> Sales
+              <i class="fa fa-caret-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-folder"></i> Design
+              <i class="fa fa-caret-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-folder"></i> Office </a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-folder"></i> Help</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-folder"></i> Legal</a>
+          </li>
+          <br />
+          <br />
+          <br />
+          <br />
+          <li>
+            <a href="#"><i class="fa fa-plus"></i> Invite teammate</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-question"></i> Help and First steps</a>
+          </li>
+          <li>
+            <a href="#">
+              7 Days left on trial
+              <button class="black-btn">Add billing</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- navbar with search option -->
+      <div class="content">
+        <div class="top-navbar">
+          <div class="logo">
+            <a href="#">Products</a>
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search..." />
+            <button><i class="fas fa-search"></i></button>
+          </div>
+          <div class="icons">
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fas fa-cog"></i></a>
+          </div>
+        </div>
+        <div class="filter-options">
+          <!-- Filter options here -->
+          <div class="left-buttons">
+            <button id="allBrandsBtn">
+              <i class="fas fa-list"></i> All Brands
+            </button>
+            <button id="deskBtn"><i class="fa fa-caret-down"></i> Desk</button>
+            <button id="tagsBtn"><i class="fa fa-caret-down"></i> Tags</button>
+            <button id="sortBtn"><i class="fas fa-sort"></i> Sort</button>
+            <button id="filtersBtn">
+              <i class="fas fa-filter"></i> Filters
+            </button>
+          </div>
+          <div class="right-buttons">
+            <button id="meetingBtn">
+              <i class="fas fa-users"></i> Meeting
+            </button>
+            <button id="importExportBtn">
+              <i class="fas fa-exchange-alt"></i> Import/Export
+            </button>
+          </div>
+        </div>
+        <div class="brand-details">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th></th>
+                <!-- Empty header for checkbox -->
+                <th>Company</th>
+                <th>Description</th>
+                <th>Members</th>
+                <th>Action</th>
+                <th>Tags</th>
+                <th>Time</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Rows with checkboxes -->
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td class="company-info">
+                  <img
+                    class="company-logo"
+                    src="https://www.sendcloud.com/wp-content/uploads/2020/09/Wix-icon.svg"
+                    alt="Company Logo"
+                  />
+                  <span class="company-name">Wix</span>
+                  <span><i class="fas fa-comment"></i> 2</span>
+                </td>
+                <td>Desktop a personalized and our things ft....</td>
+                <td class="member-images">
+                  <img
+                    class="member-image"
+                    src="monogram-2953821_1280.png"
+                    alt="Member 1"
+                  />
+                  <img
+                    class="member-image"
+                    src="radio-cassette-3634616_1280.png"
+                    alt="Member 2"
+                  />
+                  <img
+                    class="member-image"
+                    src="wolf-3088892_1280.png"
+                    alt="Member 3"
+                  />
+                </td>
+                <td><button class="category-purple">Automation</button></td>
+                <td>
+                  <button class="tags-btn">#DigitalTransformation</button
+                  ><button class="tags-btn">#</button>
+                </td>
+                <td><button class="time-green">in 30 minutes</button></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td class="company-info">
+                  <img
+                    class="company-logo"
+                    src="https://cdn-icons-png.flaticon.com/512/825/825500.png"
+                    alt="Company Logo"
+                  />
+                  <span class="company-name">Shopify</span>
+                </td>
+                <td>Introdyce a cloud based platform whic....</td>
+                <td class="member-images">
+                  <img
+                    class="member-image"
+                    src="vintage-1064142_1280.png"
+                    alt="Member 1"
+                  />
+                  <img
+                    class="member-image"
+                    src="radio-cassette-3634616_1280.png"
+                    alt="Member 2"
+                  />
+                  <img
+                    class="member-image"
+                    src="flag-34884_1280.png"
+                    alt="Member 3"
+                  />
+                </td>
+                <td>
+                  <button class="category-red">E-commerce</button
+                  ><button class="category-yellow">B2B</button>
+                </td>
+                <td>
+                  <button class="tags-btn">#OnlineShopping</button
+                  ><button class="tags-btn">#Digi</button>
+                </td>
+                <td><button class="time-lightgreen">Tomorrow</button></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td class="company-info">
+                  <img
+                    class="company-logo"
+                    src="https://static-00.iconduck.com/assets.00/mailchimp-icon-2048x2048-7tjwbg42.png"
+                    alt="Company Logo"
+                  />
+                  <span class="company-name">Mailchimp</span>
+                </td>
+                <td>Develop a mobile app with aim to include....</td>
+                <td class="member-images">
+                  <img
+                    class="member-image"
+                    src="monogram-2953821_1280.png"
+                    alt="Member 1"
+                  />
+                  <img
+                    class="member-image"
+                    src="radio-cassette-3634616_1280.png"
+                    alt="Member 2"
+                  />
+                  <img
+                    class="member-image"
+                    src="wolf-3088892_1280.png"
+                    alt="Member 3"
+                  />
+                </td>
+                <td>
+                  <button class="category-green">SAAS</button
+                  ><button class="category-yellow">Mobile</button>
+                </td>
+                <td>
+                  <button class="tags-btn">#Techinnovation</button
+                  ><button class="tags-btn">#Digital</button>
+                </td>
+                <td><button class="time-lightgreen">Tomorrow</button></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td class="company-info">
+                  <img
+                    class="company-logo"
+                    src="https://cdn-icons-png.flaticon.com/512/2504/2504802.png"
+                    alt="Company Logo"
+                  />
+                  <span class="company-name">PayPal</span>
+                  <span><i class="fas fa-comment"></i> 7</span>
+                </td>
+                <td>This program could include you towards....</td>
+                <td class="member-images">
+                  <img
+                    class="member-image"
+                    src="vintage-1064142_1280.png"
+                    alt="Member 1"
+                  />
+                  <img
+                    class="member-image"
+                    src="radio-cassette-3634616_1280.png"
+                    alt="Member 2"
+                  />
+                  <img
+                    class="member-image"
+                    src="flag-34884_1280.png"
+                    alt="Member 3"
+                  />
+                </td>
+                <td>
+                  <button class="category-green">Marketplace</button>
+                </td>
+                <td>
+                  <button class="tags-btn">#DaySaleOnline</button
+                  ><button class="tags-btn">#Digital</button>
+                </td>
+                <td><button class="time-red">in 6 hours</button></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td class="company-info">
+                  <img
+                    class="company-logo"
+                    src="https://www.shutterstock.com/image-photo/moscow-russia-march-2018-disney-260nw-1049370260.jpg"
+                    alt="Company Logo"
+                  />
+                  <span class="company-name">Disney</span>
+                </td>
+                <td>Introduce a B2B solutions for your en....</td>
+                <td class="member-images">
+                  <img
+                    class="member-image"
+                    src="monogram-2953821_1280.png"
+                    alt="Member 1"
+                  />
+                  <img
+                    class="member-image"
+                    src="radio-cassette-3634616_1280.png"
+                    alt="Member 2"
+                  />
+                  <img
+                    class="member-image"
+                    src="wolf-3088892_1280.png"
+                    alt="Member 3"
+                  />
+                </td>
+                <td>
+                  <button class="category-red">B2B</button
+                  ><button class="category-green">B2C</button>
+                </td>
+                <td>
+                  <button class="tags-btn">#BusinessPaternaternship</button>
+                </td>
+                <td><button class="time-red">in 30 minutes</button></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td class="company-info">
+                  <img
+                    class="company-logo"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEvbusf9q10wtkzxJFRvGor5B0-5fiCq4a3hrcFbjNA&s"
+                    alt="Company Logo"
+                  />
+                  <span class="company-name">Interecom</span>
+                  <span><i class="fas fa-comment"></i> 9</span>
+                </td>
+                <td>Implement an AI driven company whic......</td>
+                <td class="member-images">
+                  <img
+                    class="member-image"
+                    src="vintage-1064142_1280.png"
+                    alt="Member 1"
+                  />
+                  <img
+                    class="member-image"
+                    src="radio-cassette-3634616_1280.png"
+                    alt="Member 2"
+                  />
+                  <img
+                    class="member-image"
+                    src="flag-34884_1280.png"
+                    alt="Member 3"
+                  />
+                </td>
+                <td>
+                  <button class="category-blue">Technology</button
+                  ><button class="category-green">SAAS</button>
+                </td>
+                <td>
+                  <button class="tags-btn">#DriveFinance</button
+                  ><button class="tags-btn">#SAASFit</button>
+                </td>
+                <td><button class="time-green">in 1 hours</button></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td class="company-info">
+                  <img
+                    src="https://cdn.mos.cms.futurecdn.net/mkXgKuGBww7TQUASvxRxmR.jpg"
+                    class="Company Logo"
+                    width="50"
+                  />
+                  Google &nbsp &nbsp
+                  <span><i class="fas fa-comment"></i> 5</span>
+                </td>
+                <td>Offer a comprehensive tags to search the....</td>
+                <td class="member-images">
+                  <img
+                    class="member-image"
+                    src="monogram-2953821_1280.png"
+                    alt="Member 1"
+                  />
+                  <img
+                    class="member-image"
+                    src="radio-cassette-3634616_1280.png"
+                    alt="Member 2"
+                  />
+                  <img
+                    class="member-image"
+                    src="wolf-3088892_1280.png"
+                    alt="Member 3"
+                  />
+                </td>
+                <td>
+                  <button class="category-yellow">Finance</button
+                  ><button class="category-purple">Automation</button>
+                </td>
+                <td>
+                  <button class="tags-btn">#SmartFinance</button
+                  ><button class="tags-btn">#Work For</button>
+                </td>
+                <td><button class="time-green">in 30 minutes</button></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td class="company-info">
+                  <img
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-evernote-125616.png?f=webp"
+                    class="Company Logo"
+                    width="50"
+                  />
+                  Evernnote
+                </td>
+                <td>This could include smart way to impleme....</td>
+                <td class="member-images">
+                  <img
+                    class="member-image"
+                    src="vintage-1064142_1280.png"
+                    alt="Member 1"
+                  />
+                  <img
+                    class="member-image"
+                    src="radio-cassette-3634616_1280.png"
+                    alt="Member 2"
+                  />
+                  <img
+                    class="member-image"
+                    src="flag-34884_1280.png"
+                    alt="Member 3"
+                  />
+                </td>
+                <td><button class="category-yellow">Transportation</button></td>
+                <td>
+                  <button class="tags-btn">#LogisticTech</button
+                  ><button class="tags-btn">#Flix</button>
+                </td>
+                <td><button class="tags-btn">in 30 minutes</button></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td class="company-info">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/022/100/816/non_2x/microsoft-logo-transparent-free-png.png"
+                    class="Company Logo"
+                    width="50"
+                  />
+                  Microsoft &nbsp &nbsp
+                  <span><i class="fas fa-comment"></i> 2</span>
+                </td>
+                <td>Launch an adivisory service for word and....</td>
+                <td class="member-images">
+                  <img
+                    class="member-image"
+                    src="wolf-3088892_1280.png"
+                    alt="Member 1"
+                  />
+                  <img
+                    class="member-image"
+                    src="monogram-2953821_1280.png"
+                    alt="Member 2"
+                  />
+                  <img
+                    class="member-image"
+                    src="flag-34884_1280.png"
+                    alt="Member 3"
+                  />
+                </td>
+                <td>
+                  <button class="category-purple">Automation</button
+                  ><button class="category-yellow">B2C</button>
+                </td>
+                <td>
+                  <button class="tags-btn">#D2Marketinf</button
+                  ><button class="tags-btn">#Mental</button>
+                </td>
+                <td><button class="time-red">No contact</button></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td class="company-info">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIzwRm5FplYAqUA9vCpyrvcsX0iyvgjXvO6IxzT6GmfqAu_u95eh-3MoNGXft-nzGq_o4&usqp=CAU"
+                    class="Company Logo"
+                    width="50"
+                  />
+                  Invison
+                </td>
+                <td>This tool would analyze the works of th....</td>
+                <td class="member-images">
+                  <img
+                    class="member-image"
+                    src="vintage-1064142_1280.png"
+                    alt="Member 1"
+                  />
+                  <img
+                    class="member-image"
+                    src="radio-cassette-3634616_1280.png"
+                    alt="Member 2"
+                  />
+                  <img
+                    class="member-image"
+                    src="flag-34884_1280.png"
+                    alt="Member 3"
+                  />
+                  <img
+                    class="member-image"
+                    src="vintage-1064142_1280.png"
+                    alt="Member 1"
+                  />
+                  <img
+                    class="member-image"
+                    src="monogram-2953821_1280.png"
+                    alt="Member 1"
+                  />
+                </td>
+                <td><button class="category-green">Web Service</button></td>
+                <td><button class="tags-btn">#AiIntegration</button></td>
+                <td><button class="tags-btn">Next month</button></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>10 count</td>
+                <td>+ Add Calculation</td>
+                <td>+ Add Calculation</td>
+                <td>+ Add Calculation</td>
+                <td>+ Add Calculation</td>
+                <td>+ Add Calculation</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer>
+      <div class="center">
+        <button class="black-btn">3</button>
+        <button class="tags-btn">selected</button>
+        <button class="tags-btn">
+          <i class="fa fa-archive" aria-hidden="true"></i> Archive
+        </button>
+        <button style="color: red" class="tags-btn">
+          <i class="fa fa-trash" aria-hidden="true"></i> Delete
+        </button>
+        <button class="tags-btn"><i class="fa fa-caret-down"></i>More</button>
+        <button class="tags-btn">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+    </footer> -->
+    <div class="bottom-buttons">
+      <button class="black-btn">3</button>
+      <button class="tags-btn">selected</button>
+      <button class="tags-btn">
+        <i class="fa fa-archive" aria-hidden="true"></i> Archive
+      </button>
+      <button style="color: red" class="tags-btn">
+        <i class="fa fa-trash" aria-hidden="true"></i> Delete
+      </button>
+      <button class="tags-btn"><i class="fa fa-caret-down"></i>More</button>
+      <button class="tags-btn">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+    </div>
+    <!-- javascript adding -->
+    <script src="script.js"></script>
+  </body>
+</html>

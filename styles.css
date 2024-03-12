@@ -1,0 +1,459 @@
+/* Apply basic styling to the body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Create a flex container for the layout */
+.wrapper {
+  display: flex;
+}
+
+/* Style for the sidebar */
+.sidebar {
+  width: 250px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border: 2px solid rgba(128, 128, 128, 0.479);
+}
+
+/* Style for the logo */
+.logo img {
+  width: 50px;
+}
+
+.logo h2 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Style for the menu list */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+/* Style for each menu item */
+.menu li {
+  margin-bottom: 10px;
+}
+
+/* Style for menu item links */
+.menu li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+/* Style for notification badges */
+.notification {
+  background-color: rgba(128, 128, 128, 0.678);
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+/* Style for folder icons */
+.folder-icon {
+  float: right;
+}
+
+/* Hide sub-menus by default */
+.sub-menu {
+  display: none;
+  list-style: none;
+  padding-left: 20px;
+}
+
+/* Top navbar styles */
+.top-navbar {
+  background-color: #fff; /* White background */
+  color: #333; /* Dark gray text */
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid rgba(128, 128, 128, 0.479); /* Semi-transparent gray border */
+}
+
+.top-navbar .logo a {
+  color: #333; /* Dark gray text */
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Search bar styles */
+.search-bar {
+  position: relative;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.search-bar input[type="text"] {
+  width: 200px;
+  padding: 0.5rem;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-bar button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Content area styles */
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff; /* White background */
+  border: 2px solid rgba(128, 128, 128, 0.479); /* Semi-transparent gray border */
+}
+/* Selection options styles */
+.selection-options input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Filter options styles */
+.filter-options {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem;
+}
+
+/* Left and right buttons styles */
+.left-buttons,
+.right-buttons {
+  display: flex;
+}
+
+.left-buttons button,
+.right-buttons button {
+  margin-right: 10px;
+}
+
+/* Custom table styles */
+.custom-table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid #dddddd; /* Light gray border */
+  padding: 8px;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.custom-table th {
+  background-color: #f2f2f2; /* Light gray background */
+}
+
+.custom-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+.custom-table tr:hover {
+  background-color: #ddd; /* Darker gray background on hover */
+}
+
+/* Company info styles */
+.company-info {
+  display: flex;
+  align-items: center;
+}
+
+.company-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.company-name {
+  margin-right: 5px;
+}
+
+/* Member images styles */
+.member-images {
+  position: relative;
+}
+
+.member-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /* position: absolute; */
+}
+
+.member-image:nth-child(2) {
+  left: 15px;
+}
+
+.member-image:nth-child(3) {
+  left: 30px;
+}
+/* 
+footer {
+  background:white;
+  color: white;
+  padding: 9px 20px;
+  text-align: center;
+} */
+
+/* Button styles */
+.button-red {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* /////////////////////////////////////////////////////// */
+/* Category button styles */
+.category-purple,
+.category-red,
+.category-blue,
+.category-yellow,
+.category-green {
+  color: #fff; /* White text */
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.category-purple {
+  background-color: #d8b3ff; /* Purple background */
+  color: purple;
+}
+
+.category-red {
+  background-color: rgba(
+    255,
+    145,
+    0,
+    0.568
+  ); /* Semi-transparent orange background */
+  color: brown;
+}
+
+.category-blue {
+  background-color: rgba(
+    0,
+    47,
+    255,
+    0.514
+  ); /* Semi-transparent blue background */
+  color: blue;
+}
+
+.category-yellow {
+  background-color: rgba(
+    255,
+    255,
+    0,
+    0.568
+  ); /* Semi-transparent yellow background */
+  color: brown;
+}
+
+.category-green {
+  background-color: #b3ffb3; /* Light green background */
+  color: green;
+  padding-left: 1rem;
+}
+
+/* Tags button styles */
+.tags-btn {
+  background-color: #d9d9d988; /* Semi-transparent gray background */
+  margin-left: 1rem;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Black button styles */
+.black-btn {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+/* Time button styles */
+.time-green,
+.time-lightgreen,
+.time-red {
+  color: #fff; /* White text */
+  font-weight: 600;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.time-green {
+  background-color: #b3ffb3; /* Light green background */
+  color: green;
+}
+
+.time-lightgreen {
+  background-color: rgba(
+    0,
+    0,
+    255,
+    0.425
+  ); /* Semi-transparent light blue background */
+  color: rgba(76, 0, 255, 0.952); /* Semi-transparent purple text */
+}
+
+.time-red {
+  background-color: rgba(
+    255,
+    0,
+    13,
+    0.281
+  ); /* Semi-transparent red background */
+  color: brown;
+}
+
+/* Additional tags button styles */
+.tagss-btn {
+  background-color: #33333375; /* Semi-transparent dark gray background */
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Bottom buttons styles */
+.bottom-buttons {
+  margin: 20px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-buttons button {
+  margin: 0 5px;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .top-navbar .logo a {
+    font-size: 16px;
+  }
+  .company-logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .top-navbar .logo a {
+    font-size: 14px;
+  }
+  .company-logo {
+    width: 30px;
+    height: 30px;
+  }
+  .menu li a {
+    padding: 8px;
+  }
+  .search-bar input[type="text"] {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .top-navbar .logo a {
+    font-size: 12px;
+  }
+  .menu li a {
+    padding: 6px;
+  }
+  .search-bar input[type="text"] {
+    width: 120px;
+  }
+}
+
+/* Default styles */
+.brand-details {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+  .custom-table th,
+  .custom-table td {
+    padding: 6px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .custom-table th,
+  .custom-table td {
+    padding: 4px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .custom-table th,
+  .custom-table td {
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .custom-table th,
+  .custom-table td {
+    font-size: 12px;
+  }
+}
