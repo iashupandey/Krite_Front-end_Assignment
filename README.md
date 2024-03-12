@@ -35,6 +35,6 @@ If you wish to share your project with others:
 
 2. **Sharing**: Share the deployed link with others to access your project online.
 
-
+Live Deployed Link: https://krite-front-end-assignment.vercel.app/
 
 By following these steps, you can successfully set up, run, and deploy your HTML, CSS, and JavaScript-based project.
